@@ -14,10 +14,11 @@
 # React Server Components(RSC) vs Client Components
 
 - RSC: Only rendered on the server, by defualt all components are RSC
-- CC: Pre-rendered on server but then also potentially on the client, can be achieved using 'use client'; Eg: error.jsx, usePathname, useState, etc
+- CC: Pre-rendered on server but then also potentially on the client, can be achieved using 'use client'; Eg: error.jsx, usePathname, useRouter, useState, etc
 
 # Intercepting Route
 
 - It is an Alternative route which sometimes get activated depending on whether we are navigating it through internal link within the page or we are coming from external link.
-- It intercepts the internal navigation request
+- It intercepts the internal navigation request.
 - We can mae IR using (path-to-interceoter-route)same-name-as-of-intercepter-route Eg: (.)image
+- Interceptor folder will be available in layouts also, as in @modal
