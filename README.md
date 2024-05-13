@@ -22,3 +22,7 @@
 - It intercepts the internal navigation request.
 - We can mae IR using (path-to-interceoter-route)same-name-as-of-intercepter-route Eg: (.)image
 - Interceptor folder will be available in layouts also, as in @modal
+
+# Route Groups
+
+- Every route group has their own layout
