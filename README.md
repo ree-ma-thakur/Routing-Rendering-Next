@@ -26,3 +26,21 @@
 # Route Groups
 
 - Every route group has their own layout
+
+# Route Handlers
+
+- api folder inside app
+- route.js file inside apifolder, which is also a reserved name
+- With route.js file we set up route handler which is different from page
+- It is a file in which we export various functions which must be named GET, POST, PATCH, PUT or DELETE
+- Idea behind this is, we set up routes that don't return pages but return or accept JSON data or to store data
+- It gets request & return new Response object that is provided by browser & node.js
+
+# Middleware
+
+- Reserved file name in root path: middleware.js
+- File has middleware function which gets a request object passed automatically by Next.js & return NextResponse.next() which simple forwards the incoming request to its actual destination
+- We can either forward the request or block it or resirect it (NextResponse.redirect())
+- This is another feature related to routing as middleware allows us to set up code that will run on every request that is sent to any page or any route anywhere in entire website so that we can inspect the request block or redirect the request or anything
+- config object: we can export that as well in we add matcher (it filter the kind of request that trigger the middleware)
+- https://nextjs.org/docs/app/building-your-application/routing/middleware
