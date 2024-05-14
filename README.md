@@ -55,3 +55,5 @@
 - Nextjs supports RSC therefore we can fetch data directly inside RSC
 - Will make our RSC as async
 - Nextjs exntends the fetch function & add some extra caching related features to it
+
+# better-sqlite3: handle async await by its own

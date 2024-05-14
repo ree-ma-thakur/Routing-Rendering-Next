@@ -1,5 +1,6 @@
 // "use client";
 import NewsList from "@/components/news-list";
+import { getAllNews } from "@/lib/news";
 // import { useEffect, useState } from "react";
 
 const NewsPage = async () => {
@@ -37,9 +38,12 @@ const NewsPage = async () => {
   // }
 
   // Use this directly inside RSC not in useEffect for server side data fetching
-  const response = await fetch("http://localhost:8080/news");
-  if (!response.ok) throw new Error("Failed to fetch news");
-  const news = await response.json();
+  // const response = await fetch("http://localhost:8080/news");
+  // if (!response.ok) throw new Error("Failed to fetch news");
+  // const news = await response.json();
+
+  // This is possible only in RSC not on client side
+  const news = getAllNews();
 
   return (
     <>
