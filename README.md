@@ -61,4 +61,4 @@
 # loading.js (default page for loading)
 
 - It automatically runs till the data loads
-- It handles loading fallback
+- It handles loading fallback: whenever our component is waiting for response
