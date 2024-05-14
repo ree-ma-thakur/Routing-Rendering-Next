@@ -57,3 +57,8 @@
 - Nextjs exntends the fetch function & add some extra caching related features to it
 
 # better-sqlite3: handle async await by its own
+
+# loading.js (default page for loading)
+
+- It automatically runs till the data loads
+- It handles loading fallback

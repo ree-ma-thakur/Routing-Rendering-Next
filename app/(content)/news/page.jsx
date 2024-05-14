@@ -43,7 +43,7 @@ const NewsPage = async () => {
   // const news = await response.json();
 
   // This is possible only in RSC not on client side
-  const news = getAllNews();
+  const news = await getAllNews();
 
   return (
     <>
