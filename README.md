@@ -44,3 +44,12 @@
 - This is another feature related to routing as middleware allows us to set up code that will run on every request that is sent to any page or any route anywhere in entire website so that we can inspect the request block or redirect the request or anything
 - config object: we can export that as well in we add matcher (it filter the kind of request that trigger the middleware)
 - https://nextjs.org/docs/app/building-your-application/routing/middleware
+
+## DATA FETCHING
+
+# Client side data fetching: using useEffect & 'use client'
+
+# Server side DF
+
+- React server components can return promises also instead of just JSX
+- Nextjs supports RSC therefore we can fetch data directly inside RSC
