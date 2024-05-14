@@ -49,7 +49,9 @@
 
 # Client side data fetching: using useEffect & 'use client'
 
-# Server side DF
+# Server side data fetching
 
 - React server components can return promises also instead of just JSX
 - Nextjs supports RSC therefore we can fetch data directly inside RSC
+- Will make our RSC as async
+- Nextjs exntends the fetch function & add some extra caching related features to it
