@@ -1,20 +1,27 @@
 # Routing
 
 - Static & dynamic routes
+  - [id] folder -> page.jsx -> params.id ; params as props
 - Not found page
-- Parallel Routes(PR)
-  - Folder name starts with @ Eg: @archive, @latest in archive folder
-  - Layout for parallel routes will not have children prop but have parallel routes as props
-  - default.jsx in second parallel route need to be there because dynamic route inside first PR will only work if there is same dynamic route or default.jsx
+  - not-found.jsx (if some page is not found then this will render)
+  - If we want to add not-found inside nested folder then nxetjs will not directly render that not-found.jsx instead we have to add condition that if dyanmic content is not present then call notFound(); next js will then handle this.
+
+# Parallel routes(PR)
+
+- Folder name starts with @ Eg: @archive, @latest in archive folder
+- Layout for parallel routes will not have children prop but have parallel routes as props
+- default.jsx in second parallel route need to be there because dynamic route inside first PR will only work if there is not same dynamic route or default.jsx (we can remove page.jsx file from PR if we have default.jsx) in second PR
 - Catch-all Routes
-  - [[...filter]] : folder name example
+  - [[...filter]] inside archive/@archive : folder name example
+  - Whatever the url after /archive it will get into catch-all routes
 - Error file
   - error.jsx : Must be a client component because errors can also be possible on client not only on server; It can be used with 'use client' only
+  - We can call it using throw new Error('invalid') -> can be used as error.message in error.jsx
 
 # React Server Components(RSC) vs Client Components
 
 - RSC: Only rendered on the server, by defualt all components are RSC
-- CC: Pre-rendered on server but then also potentially on the client, can be achieved using 'use client'; Eg: error.jsx, usePathname, useRouter, useState, etc
+- CC: Pre-rendered on server but then also potentially on the client, can be achieved using 'use client'; Eg: error.jsx, usePathname, useRouter, useState, useEffect etc
 
 # Intercepting Route
 
