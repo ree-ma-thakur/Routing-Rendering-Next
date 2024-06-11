@@ -65,7 +65,8 @@
 
 # better-sqlite3: handle async await by its own
 
-# loading.js (default page for loading)
+# loading.js (default page for loading or using Suspense for Granular loading)
 
 - It automatically runs till the data loads
 - It handles loading fallback: whenever our component is waiting for response
+- We can add small loaders for specific component using Suspense & add our custom loader component in Suspense fallback
